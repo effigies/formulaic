@@ -3,6 +3,7 @@ import numpy
 from .basis_spline import basis_spline
 from .identity import identity
 from .contrasts import C, encode_contrasts, ContrastsRegistry
+from .patsy_compat import Q
 from .poly import poly
 from .scale import center, scale
 
@@ -35,4 +36,6 @@ TRANSFORMS = {
     "C": C,
     "contr": ContrastsRegistry,
     "I": identity,
+    # Patsy compat
+    "Q": Q,
 }
